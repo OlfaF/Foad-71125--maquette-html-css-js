@@ -3,15 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/resets.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="./assets/js/script.js" defer></script>
+    <script type="module" src="./assets/js/script.js" defer></script>
     <title> Location de voiture </title>
 </head>
-<body>
+ <body>
     <header>
+      <section id="hero">
+        <nav id="navbar">
+          <div id="burger">
+            <img src="./assets/img/icon-hamburger.svg" alt="" />
+          </div>
+        </nav>
+        <div id="heroImg">
+          <div id="title">
+            <h1>Bienvenue à bord</h1>
+            <h2>Location de voiture 24h/24 et 7j/7</h2>
+          </div>
+
+          <div id="reservation">
+            <select name="" id="adresse">
+              <option value="Adresse de départ">Adresse de départ</option>
+              <option value="Maison">Maison</option>
+              <option value="Bureau">Bureau</option>
+              <option value="Magasin">Magasin</option>
+            </select>
+            <div class="dateContainer">
+              <div class="dateTitle">
+                <p>Début de Location</p>
+              </div>
+              <div class="calendar">
+                <i class="fa-solid fa-calendar-days"></i>
+              </div>
+            </div>
+            <div class="dateContainer">
+              <div class="dateTitle">
+                <p>Fin de Location</p>
+              </div>
+              <div class="calendar">
+                <i class="fa-solid fa-calendar-days"></i>
+              </div>
+            </div>
+            <input type="button" id="valider" value="Valider ma recherche" />
+          </div>
+        </div>
+      </section>
     </header>
-    <main></main>
-    <footer></footer>
-    
-</body>
+
+    <main>
+      <section id="container">
+        <div id="filtres">
+          <h3 id="result"></h3>
+          <select name="Tri" id="tri">
+            <option value="Trier">Trier</option>
+            <option value="Prix croissant">Prix croissant</option>
+            <option value="Prix décroissant">Prix décroissant</option>
+          </select>
+        </div>
+        <div id="cars"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div id="agence">
+        <img src="./assets/img/agence.jpg" alt="" />
+      </div>
+      <div id="infos">
+        <p>Notre Agence de <span>Paris</span></p>
+        <p>300 Boulevard de Vaugirard, 75015, Paris</p>
+        <p>Ouvert 7j/7 de 09h à 13h et de 14h à 20h</p>
+        <p>01 49 78 21 33</p>
+        <p>contact@vtc.com</p>
+      </div>
+    </footer>
+  </body>
 </html>
